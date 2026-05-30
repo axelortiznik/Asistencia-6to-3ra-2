@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asistencia - 6to 3ra</title>
     <link rel="stylesheet" href="appviews.css">
-
 </head>
 <body>
 
@@ -13,40 +12,35 @@
     <h2>Asistencia 6to 3ra</h2>
     
     <form id="attendanceForm">
-        <!-- Selector de Alumnos -->
         <div class="form-group">
             <label for="studentName">Seleccioná tu Nombre:</label>
             <select id="studentName" required>
                 <option value="" disabled selected>Elegí tu nombre...</option>
-                <!-- Agrega acá abajo todos los alumnos del curso uno por uno -->
-                <option value="Paredes Jose Carlos">Paredes Jose Carlos</otcion>
-                <option value="Molfino Manuel">Molfino Manuel</otcion>
-                <option value="Alanoca Yamil">Alanoca Yamil</otcion>
-                <option value="Ortiz axel">Ortiz Axel</otcion>
-                <option value="Bonahora Diego">Bomahora Diego</otcion>
-                <option value="Maguicha Franco">Maguicha Franco</otcion>
-                <option value="Freiheit Ezequiel">Freiheit Ezequiel</otcion>
-                <option value="Quiroz Ariel">Quiroz Ariel</otcion>
-                <option value="Ojeda Joaquin">Ojeda Joaquin</otcion>
-                <option value="Centurion Antonella">Centurion Antonella</otcion>
-                <option value="Santa Cruz Tomas">Santa Cruz Tomas</otcion>
-                <option value="Arias Ruben">Arias Ruben</otcion>
-                <option value="Gonsalez Dylan">Gonzales Dylan</otcion>
-                <option value="Vesque Lautaro">Vesque Lautaro</otcion>
-                <option value="Galvan Nahuel">Galvan Nahuel</otcion>
-                <option value="Parodi Alexis">Parodi Alexis</otcion>
-                <option value="Tabarez Axel">Tabarez Axel</otcion>
-                <!-- Podés copiar y pegar la línea de arriba para meter a todo el curso -->
+                <option value="Paredes Jose Carlos">Paredes Jose Carlos</option>
+                <option value="Molfino Manuel">Molfino Manuel</option>
+                <option value="Alanoca Yamil">Alanoca Yamil</option>
+                <option value="Ortiz Axel">Ortiz Axel</option>
+                <option value="Bonahora Diego">Bonahora Diego</option>
+                <option value="Maguicha Franco">Maguicha Franco</option>
+                <option value="Freiheit Ezequiel">Freiheit Ezequiel</option>
+                <option value="Quiroz Ariel">Quiroz Ariel</option>
+                <option value="Ojeda Joaquin">Ojeda Joaquin</option>
+                <option value="Centurion Antonella">Centurion Antonella</option>
+                <option value="Santa Cruz Tomas">Santa Cruz Tomas</option>
+                <option value="Arias Ruben">Arias Ruben</option>
+                <option value="Gonzalez Dylan">Gonzalez Dylan</option>
+                <option value="Vesque Lautaro">Vesque Lautaro</option>
+                <option value="Galvan Nahuel">Galvan Nahuel</option>
+                <option value="Parodi Alexis">Parodi Alexis</option>
+                <option value="Tabarez Axel">Tabarez Axel</option>
             </select>
         </div>
 
-        <!-- Número de PC -->
         <div class="form-group">
             <label for="pcNumber">Número de PC donde estás sentado:</label>
             <input type="number" id="pcNumber" min="1" max="30" placeholder="Ej: 12" required>
         </div>
 
-        <!-- Código de Validación -->
         <div class="form-group">
             <label for="validationCode">Código de Aula (Mirá el pizarrón):</label>
             <input type="text" id="validationCode" placeholder="Ingresá el código de hoy" required>
