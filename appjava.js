@@ -1,4 +1,4 @@
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwSws4_TekI8W1yBmRf4pgZihgUmubpdtamYoV_STKvSy9vUhu-8FLVzMWJQYtWSeL4/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzjqW5gf156KeBsZr9ritEXtf15qGzKqy9WOxzVbyOX9sd4xZpP-phQ-TNJB52PZi0D1A/exec";
 
 document.getElementById('attendanceForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -8,7 +8,6 @@ document.getElementById('attendanceForm').addEventListener('submit', function(e)
     
     btn.disabled = true;
     btn.innerText = "Enviando...";
-    msgDiv.style.display = "none";
 
     const payload = {
         nombre: document.getElementById('studentName').value,
@@ -25,17 +24,13 @@ document.getElementById('attendanceForm').addEventListener('submit', function(e)
     .then(() => {
         msgDiv.innerText = "¡Presente registrado! Revisá con el profe.";
         msgDiv.style.display = "block";
-        msgDiv.style.color = "#155724";
-        msgDiv.style.backgroundColor = "#d4edda";
-        msgDiv.style.padding = "10px";
-        msgDiv.style.borderRadius = "5px";
+        msgDiv.style.backgroundColor = "#d4edda"; // Verde éxito
         document.getElementById('attendanceForm').reset();
     })
     .catch(error => {
         msgDiv.innerText = "Error. Intentá de nuevo.";
         msgDiv.style.display = "block";
-        msgDiv.style.color = "#721c24";
-        console.error(error);
+        msgDiv.style.backgroundColor = "#f8d7da"; // Rojo error
     })
     .finally(() => {
         btn.disabled = false;
