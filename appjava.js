@@ -1,5 +1,5 @@
 // REEMPLAZÁ ESTE LINK CON TU URL DE GOOGLE APPS SCRIPT
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbygNKvHZ6wn3x2Whml4st8LiFYOOBvxJ34TCFtpQMUSVytFLK3Bz2sct7F7HeGOWk8/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyGX6ar4nzTzrsh30ksQg2Kn1jGpfL_TMmLKMHg8CEWP8LDZF6HK30pgPDUebckStAg/exec";
 
 document.getElementById('attendanceForm').addEventListener('submit', function(e) {
     e.preventDefault();
